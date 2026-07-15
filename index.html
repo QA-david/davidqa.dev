@@ -12,11 +12,27 @@
     <title>David Almeida | Senior Quality Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/davidqa.dev/assets/index-DHQVUXbK.js"></script>
-    <link rel="stylesheet" crossorigin href="/davidqa.dev/assets/index-OsHiY_TP.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/davidqa.dev/assets/index-CapZSaJd.js"></script>
+    <link rel="stylesheet" crossorigin href="/davidqa.dev/assets/index-b_EocEDQ.css">
   </head>
   <body class="bg-background text-textPrimary">
-    <div id="root"></div>
+    <script>
+      // Reverses the 404.html redirect trick so a deep link resolves to the
+      // right client-side route once the app takes over.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <div id="root"></div>
   </body>
 </html>
